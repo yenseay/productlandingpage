@@ -70,6 +70,9 @@ header {
 .product {
     border: solid;
     text-align: center;
+    display: flex-block;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
     background-color: rgb(241, 195, 134);
     padding-bottom: 30px;
