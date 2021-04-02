@@ -20,11 +20,33 @@ body {
     position: fixed;
 }
 
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /* assumes you only want one row */
+}
+
+#rowid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#rowid2 {
+    max-width: 900px;
+}
+
+#navbarul {}
+
 #navbar {
     background-color: green;
 }
 
-.navbar-nav {
+#navbar-SupportedContent {
     display: flex;
     align-items: end;
     justify-content: end;
@@ -114,7 +136,7 @@ footer>span {
 .product-card {
     text-align: center;
     min-width: 270px;
-    max-width: 450px;
+    /* max-width: 450px; */
     border: 2px solid;
     padding: 40px;
     background-color: rgb(255, 241, 214);

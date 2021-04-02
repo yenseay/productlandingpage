@@ -13,15 +13,15 @@
 
 <body class="container-fluid">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-success" #navbar>
+        <nav class="navbar navbar-expand navbar-light bg-success" #navbar>
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Arnald's Musicbox Emporium</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <!-- </button> -->
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0" id="navbarul">
+                        <li class="nav-item d-flex align-items-end">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
@@ -91,8 +91,8 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/O1b2fvrUwoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div>
-            <div class="row">
+        <div class="d-flex align-middle" id="rowid">
+            <div class="row gx-1.5" id="rowid2">
                 <div class="col-sm-12 col-md-4" id="product">
                     <div class="product-card">
                         <h2>Cylindrical Design</h2>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="ol-sm-12 col-md-4" id="product">
+                <div class="col-sm-12 col-md-4" id="product">
                     <div class="product-card">
                         <h2>Disc Design</h2>
                         <h2>$200</h2>
