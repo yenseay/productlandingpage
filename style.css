@@ -20,8 +20,14 @@ body {
     position: fixed;
 }
 
+#navbar {
+    background-color: green;
+}
+
 .navbar-nav {
-    padding-left: 68vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 .btn {
@@ -67,16 +73,10 @@ header {
     color: rgb(252, 215, 53);
 }
 
-.product {
-    border: solid;
-    text-align: center;
-    display: flex-block;
+#product {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    background-color: rgb(241, 195, 134);
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding: 50px;
 }
 
 .btn2 {
@@ -110,3 +110,14 @@ footer>span {
     display: flex;
     justify-content: flex-end;
 }
+
+.product-card {
+    text-align: center;
+    min-width: 270px;
+    max-width: 450px;
+    border: 2px solid;
+    padding: 40px;
+    background-color: rgb(255, 241, 214);
+}
+
+.footerlist {}

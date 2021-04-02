@@ -11,28 +11,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container-fluid">
     <header>
-        <!-- Not able to get the Navbar to be responsive and align items correctly to viewport -->
-        <nav class="navbar navbar-expand navbar-dark bg-dark" id="navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success" #navbar>
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">Arnald's Musicbox Emporium</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
         </nav>
     </header>
 
@@ -91,48 +91,51 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/O1b2fvrUwoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div class="container-fluid">
+        <div>
             <div class="row">
-                <!-- Why can I not get these to align center? I have tried using Bootstrap's align-middle class applied to the HTML and also tried display:flex and then justify-content: center; and align-items: center; -->
-                <!-- Also, issue of the lack of margin between these 3 product classes. Even applying gutters won't add margin between them -->
-                <div class="product col-sm-8 col-md-4 gx-5">
-                    <h2>Cylindrical Design</h2>
-                    <h2>$80</h2>
-                    <ol>
-                        <li>Set price</li>
-                        <li>Option of all 218 songs</li>
-                        <li>Choice of three designs</li>
-                    </ol>
-                    <button class="btn2">Select</button>
+                <div class="col-sm-12 col-md-4" id="product">
+                    <div class="product-card">
+                        <h2>Cylindrical Design</h2>
+                        <h2>$80</h2>
+                        <ol>
+                            <li>Set price</li>
+                            <li>Option of all 218 songs</li>
+                            <li>Choice of three designs</li>
+                        </ol>
+                        <button class="btn2">Select</button>
+                    </div>
                 </div>
 
-                <div class="product col-sm-8 col-md-4 gx-5">
-                    <h2>Disc Design</h2>
-                    <h2>$200</h2>
-                    <ol>
-                        <li>$80 extra for embellishments</li>
-                        <li>Option of 53 songs</li>
-                        <li>Includes backup disc</li>
-                    </ol>
-                    <button class="btn2">Select</button>
+                <div class="ol-sm-12 col-md-4" id="product">
+                    <div class="product-card">
+                        <h2>Disc Design</h2>
+                        <h2>$200</h2>
+                        <ol>
+                            <li>$80 extra for embellishments</li>
+                            <li>Option of 53 songs</li>
+                            <li>Includes backup disc</li>
+                        </ol>
+                        <button class="btn2">Select</button>
+                    </div>
                 </div>
 
-                <div class="product col-sm-8 col-md-4 gx-5">
-                    <h2>Custom Design</h2>
-                    <h2>$300</h2>
-                    <ol>
-                        <li>Begins at $300</li>
-                        <li>Option of all 218 songs</li>
-                        <li>Customer choice of wood type</li>
-                    </ol>
-                    <button class="btn2">Select</button>
+                <div class="col-sm-12 col-md-4" id="product">
+                    <div class="product-card">
+                        <h2>Custom Design</h2>
+                        <h2>$300</h2>
+                        <ol>
+                            <li>Begins at $300</li>
+                            <li>Option of all 218 songs</li>
+                            <li>Customer choice of wood type</li>
+                        </ol>
+                        <button class="btn2">Select</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
 
-    <!-- Issues with alignment still -->
     <footer>
         <ul class="footerlist">
             <li><a href="#">Privacy</a></li>
